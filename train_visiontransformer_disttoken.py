@@ -18,6 +18,7 @@ from deit import DataEfficientImageTransformer as DEIT
 import wandb
 import yaml
 import argparse
+from imagenet32_dataloader import ImageNet32
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", help = "path of the training configuartion file", required = True)
@@ -31,16 +32,24 @@ with open(args.config, 'r') as f:
         print(exc)
 
 if config['transformations'] == 'true':
-    transforms = transforms.Compose([transforms.ToTensor(), 
-									transforms.RandomHorizontalFlip(p=0.1), 
-									transforms.RandomVerticalFlip(p=0.1), 
-									transforms.RandomRotation(degrees=(0,10)),
-									transforms.Normalize((0.2675, 0.2565, 0.2761),(0.5071, 0.4867, 0.4408))])
+    transforms = transforms.Compose([transforms.ToTensor(),
+				     transforms.RandomHorizontalFlip(p=0.1),
+				     transforms.RandomVerticalFlip(p=0.1),
+					 transforms.RandomRotation(degrees=(0,10)),
+					 transforms.Normalize((0.2675, 0.2565, 0.2761),(0.5071, 0.4867, 0.4408))])
     
-    trainset =datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
+	if(config['dataset'] == 'cifar'):
+	    trainset =datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
+	elif(config['dataset'] == 'imagenet32'):
+	    trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
+	    
+	    
     
 else:
-    trainset =datasets.CIFAR100(root = config['dataset_download_path'], train = True, transform =None ,download = True)
+    if(config['dataset'] == 'cifar'):
+	    trainset =datasets.CIFAR100(root = config['dataset_download_path'], train = True, transform =None ,download = True)
+	elif(config['dataset'] == 'imagenet32'):
+	    trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =None)
 trainset, valset = torch.utils.data.random_split(trainset, [config['val_split']*len(trainset), len(trainset)-config['val_split']*len(trainset)])
 
 train_loader = DataLoader(trainset, batch_size = config['batch_size'], shuffle = True)
