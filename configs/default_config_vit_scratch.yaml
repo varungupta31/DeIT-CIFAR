@@ -1,4 +1,5 @@
 dataset_path: /ssd_scratch/cvit/varun/dataset
+cifar_path: /ssd_scratch/cvit/varun/imagenet
 valid_ratio: 0.04
 custom_config : {
         img_size: 32,
@@ -13,9 +14,9 @@ custom_config : {
 dataset: cifar #imagenet32
 train_batch_size: 2048
 valid_batch_size: 2048
-save_model_path: /ssd_scratch/cvit/varun/VIT_models/
+save_model_path: /ssd_scratch/cvit/varun/VIT_models_temp/
 save_model_name: VIT_base_no_resize
-config_write_path : /ssd_scratch/cvit/varun/VIT_models/
+config_write_path : /ssd_scratch/cvit/varun/VIT_models_temp/
 learning_rate: 3e-4
 epochs: 1000
 wandb_project : DeIT

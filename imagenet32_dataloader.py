@@ -8,7 +8,7 @@ from torchvision import transforms
 import torch
 import torchvision
 
-_base_folder = 'Imagenet32_val'
+_base_folder = 'Imagenet32_train'
 _train_list = ['train_data_batch_1',
                'train_data_batch_2',
                'train_data_batch_3',
