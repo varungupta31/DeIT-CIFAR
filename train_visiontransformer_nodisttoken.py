@@ -33,11 +33,18 @@ print(config['dataset'])
 
 
 if config['transformations'] == 'true':
-    transforms = transforms.Compose([transforms.ToTensor(), 
-									transforms.RandomHorizontalFlip(p=0.1), 
-									transforms.RandomVerticalFlip(p=0.1), 
-									transforms.RandomRotation(degrees=(0,10)),
-									transforms.Normalize((0.2675, 0.2565, 0.2761),(0.5071, 0.4867, 0.4408))])
+    if config['dataset'] == 'cifar':
+	    transforms = transforms.Compose([transforms.ToTensor(),
+						transforms.RandomHorizontalFlip(p=0.1),
+						transforms.RandomVerticalFlip(p=0.1),
+						transforms.RandomRotation(degrees=(0,10)),
+						transforms.Normalize((0.2675, 0.2565, 0.2761),(0.5071, 0.4867, 0.4408))])
+	else:
+	    transforms = transforms.Compose([transforms.ToTensor(),
+						transforms.RandomHorizontalFlip(p=0.1),
+						transforms.RandomVerticalFlip(p=0.1),
+						transforms.RandomRotation(degrees=(0,10)),
+						transforms.Normalize((0.485, 0.456, 0.406),(0.229, 0.224, 0.225))])
     if(config['dataset'] == 'cifar'):
 	    trainset =datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
 	elif(config['dataset'] == 'imagenet32'):
