@@ -10,7 +10,7 @@ custom_config : {
         qkv_bias: true,
         mlp_ratio: 4 
         }
-
+dataset: cifar #imagenet32
 train_batch_size: 2048
 valid_batch_size: 2048
 save_model_path: /ssd_scratch/cvit/varun/VIT_models/

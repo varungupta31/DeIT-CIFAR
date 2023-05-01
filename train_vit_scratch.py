@@ -20,6 +20,7 @@ import json
 import os
 import argparse
 import yaml
+from imagenet32_dataloader import ImageNet32
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", help = "path of the training configuartion file", required = True)
@@ -41,22 +42,41 @@ def download_data(apply_transforms = True, valid_ratio = config['valid_ratio'], 
     Returns --> Dataset object, that can be passed to a dataloader.
     """
     if apply_transforms:
-        transform = transforms.Compose([
-            transforms.ToTensor(),
-            transforms.RandomVerticalFlip(),
-            transforms.RandomHorizontalFlip(),
-            transforms.RandomRotation(30),
-            #Normalization values picked up from a discussion @ https://gist.github.com/weiaicunzai/e623931921efefd4c331622c344d8151
-            transforms.Normalize((0.5071, 0.4867, 0.4408), (0.2675, 0.2565, 0.2761))])
+        if config['dataset'] == "cifar":
+            transform = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.RandomVerticalFlip(),
+                transforms.RandomHorizontalFlip(),
+                transforms.RandomRotation(30),
+                #Normalization values picked up from a discussion @ https://gist.github.com/weiaicunzai/e623931921efefd4c331622c344d8151
+                transforms.Normalize((0.5071, 0.4867, 0.4408), (0.2675, 0.2565, 0.2761))])
+        else:
+            transform = transforms.Compose([
+                transforms.ToTensor(),
+                transforms.RandomVerticalFlip(),
+                transforms.RandomHorizontalFlip(),
+                transforms.RandomRotation(30),
+                #Normalization values picked up from a discussion @ https://gist.github.com/weiaicunzai/e623931921efefd4c331622c344d8151
+                transforms.Normalize((0.485, 0.456, 0.406),(0.229, 0.224, 0.225))])
 
-    trainset = datasets.CIFAR100(root = path + '/train', train = True, download=True, transform=transform)
+    if config['dataset'] == 'cifar':
+        trainset = datasets.CIFAR100(root = path + '/train', train = True, download=True, transform=transform)
 
-    valid_ratio = valid_ratio
-    n_train_samples = int(len(trainset) * (1-valid_ratio))
-    n_valid_samples = len(trainset) - n_train_samples
-    print(f"There are {n_train_samples} Train samples, and {n_valid_samples} in the Dataset.")
-    trainset, validset = data.random_split(trainset, [n_train_samples, n_valid_samples])
-    return trainset, validset
+        valid_ratio = valid_ratio
+        n_train_samples = int(len(trainset) * (1-valid_ratio))
+        n_valid_samples = len(trainset) - n_train_samples
+        print(f"There are {n_train_samples} Train samples, and {n_valid_samples} in the Dataset.")
+        trainset, validset = data.random_split(trainset, [n_train_samples, n_valid_samples])
+        return trainset, validset
+    else:
+        trainset = ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
+
+        valid_ratio = valid_ratio
+        n_train_samples = int(len(trainset) * (1-valid_ratio))
+        n_valid_samples = len(trainset) - n_train_samples
+        print(f"There are {n_train_samples} Train samples, and {n_valid_samples} in the Dataset.")
+        trainset, validset = data.random_split(trainset, [n_train_samples, n_valid_samples])
+        return trainset, validset
 
 trainset, validset = download_data()
 

@@ -46,9 +46,9 @@ if config['transformations'] == 'true':
 						transforms.RandomRotation(degrees=(0,10)),
 						transforms.Normalize((0.485, 0.456, 0.406),(0.229, 0.224, 0.225))])
     if(config['dataset'] == 'cifar'):
-	    trainset =datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
+	    trainset = datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
 	elif(config['dataset'] == 'imagenet32'):
-	    trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
+	    trainset = ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
 	    
 	    
     
