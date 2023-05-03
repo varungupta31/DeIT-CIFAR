@@ -67,15 +67,17 @@ def download_data(apply_transforms = True, valid_ratio = config['valid_ratio'], 
         n_valid_samples = len(trainset) - n_train_samples
         print(f"There are {n_train_samples} Train samples, and {n_valid_samples} in the Dataset.")
         trainset, validset = data.random_split(trainset, [n_train_samples, n_valid_samples])
+        print(type(trainset))
         return trainset, validset
     else:
         trainset = ImageNet32(root = config['cifar_path'], train = True, transform =transforms)
-
+        print("-----------------------0-0-0-0-0-0-0---------------------0-0-0-0-0-0-0-0---------")
         valid_ratio = valid_ratio
         n_train_samples = int(len(trainset) * (1-valid_ratio))
         n_valid_samples = len(trainset) - n_train_samples
         print(f"There are {n_train_samples} Train samples, and {n_valid_samples} in the Dataset.")
         trainset, validset = data.random_split(trainset, [n_train_samples, n_valid_samples])
+        print(type(trainset))
         return trainset, validset
 
 trainset, validset = download_data()
