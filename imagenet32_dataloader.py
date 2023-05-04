@@ -36,7 +36,7 @@ def remap(old_array, mapping):
 class ImageNet32(Dataset):
 
     def __init__(self, root, train=True, transform=None,
-                 target_transform=None, exclude=None, remap_labels=False):
+                 target_transform=None, exclude=None, remap_labels=True):
         self.root = os.path.expanduser(root)
         self.transform = transform
         self.target_transform = target_transform

@@ -5,7 +5,7 @@ paths:
 
 dataset : cifar #cifar / imagenet32
 val_split : 0.04
-train_batch : 1024
+train_batch : 512
 
 transormer_config:
     use_default_vit_B: True

@@ -56,7 +56,6 @@ def download_data(apply_transforms = True, valid_ratio = config['valid_ratio'], 
                 transforms.RandomVerticalFlip(),
                 transforms.RandomHorizontalFlip(),
                 transforms.RandomRotation(30),
-                #Normalization values picked up from a discussion @ https://gist.github.com/weiaicunzai/e623931921efefd4c331622c344d8151
                 transforms.Normalize((0.485, 0.456, 0.406),(0.229, 0.224, 0.225))])
 
     if config['dataset'] == 'cifar':
@@ -70,7 +69,7 @@ def download_data(apply_transforms = True, valid_ratio = config['valid_ratio'], 
         print(type(trainset))
         return trainset, validset
     else:
-        trainset = ImageNet32(root = config['cifar_path'], train = True, transform =transforms)
+        trainset = ImageNet32(root = config['imagenet_path'], train = True, transform =transform)
         print("-----------------------0-0-0-0-0-0-0---------------------0-0-0-0-0-0-0-0---------")
         valid_ratio = valid_ratio
         n_train_samples = int(len(trainset) * (1-valid_ratio))
@@ -114,8 +113,10 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 custom_config = config['custom_config']
 
 model = VisionTransformer(**custom_config).to(device=device)
-model = nn.Sequential(model,
-                      nn.Linear(1000,100, bias=True))
+
+if(config["dataset"] == 'cifar'):
+    model = nn.Sequential(model,
+                        nn.Linear(1000,100, bias=True))
 
 
 print(summary(model, (3, 32, 32)))
@@ -136,6 +137,7 @@ def train(epochs, optimizer, model, train_data_loader, val_data_loader, save_nam
         
         preds = []
         gt = []
+        
         for train_batch, (data, target) in enumerate(progress_bar(train_data_loader, parent=mb)):
             #Training Batch
 
