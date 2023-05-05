@@ -1,0 +1,82 @@
+wandb_version: 1
+
+dataset_path:
+  desc: null
+  value: /ssd_scratch/cvit/varun/dataset
+imagenet_path:
+  desc: null
+  value: /ssd_scratch/cvit/varun
+valid_ratio:
+  desc: null
+  value: 0.04
+custom_config:
+  desc: null
+  value:
+    img_size: 32
+    in_chans: 3
+    patch_size: 16
+    embed_dim: 384
+    depth: 12
+    n_heads: 6
+    qkv_bias: true
+    mlp_ratio: 4
+dataset:
+  desc: null
+  value: cifar
+train_batch_size:
+  desc: null
+  value: 2048
+valid_batch_size:
+  desc: null
+  value: 2048
+save_model_path:
+  desc: null
+  value: /ssd_scratch/cvit/varun/VIT_S_cifar_Scratch/
+save_model_name:
+  desc: null
+  value: VIT_S_imagenet_scratch
+config_write_path:
+  desc: null
+  value: /ssd_scratch/cvit/varun/VIT_S_cifar_Scratch/
+learning_rate:
+  desc: null
+  value: 0.0003
+epochs:
+  desc: null
+  value: 100
+wandb_project:
+  desc: null
+  value: DeIT
+wandb_run_name:
+  desc: null
+  value: vit_s_cifar_scratch
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.2
+    cli_version: 0.14.2
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1683224236.942952
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.11.2
+      5: 0.14.2
+      8:
+      - 5

@@ -1,0 +1,248 @@
+{
+    "os": "Linux-4.15.0-210-generic-x86_64-with-glibc2.27",
+    "python": "3.11.2",
+    "heartbeatAt": "2023-05-04T16:53:45.935478",
+    "startedAt": "2023-05-04T16:53:44.892833",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config",
+        "configs/vit_b_scratch_cifar.yaml"
+    ],
+    "state": "running",
+    "program": "/home2/varungupta/DeIT-CIFAR/train_vit_scratch.py",
+    "codePath": "train_vit_scratch.py",
+    "git": {
+        "remote": "https://github.com/varungupta31/DeIT-CIFAR.git",
+        "commit": "4c8e2bd155f84861290fa517ee83744a7d1d8acd"
+    },
+    "email": "varunharsh@gmail.com",
+    "root": "/home2/varungupta/DeIT-CIFAR",
+    "host": "gnode039",
+    "username": "varungupta",
+    "executable": "/home2/varungupta/miniconda3/envs/smai/bin/python",
+    "cpu_count": 20,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 2.1584750000000006,
+        "min": 1200.0,
+        "max": 3400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2.965,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.965,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.966,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.966,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.966,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.201,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.204,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.204,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.566,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.202,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.873,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.873,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.873,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.873,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.872,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.203,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.203,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.986,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.524,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.201,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.967,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.967,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.967,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.967,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.966,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.201,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.434,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.201,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.872,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.872,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.872,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.872,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.872,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.201,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.893,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.894,
+            "min": 1200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 1.202,
+            "min": 1200.0,
+            "max": 3400.0
+        }
+    ],
+    "disk": {
+        "total": 136.48257064819336,
+        "used": 72.13755798339844
+    },
+    "gpu": "NVIDIA GeForce GTX 1080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080 Ti",
+            "memory_total": 11811160064
+        }
+    ],
+    "memory": {
+        "total": 125.7869987487793
+    }
+}

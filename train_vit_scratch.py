@@ -110,6 +110,10 @@ def check_validation_split(validloader):
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
+def init_all(model, init_func, *params, **kwargs):
+    for p in model.parameters():
+        init_func(p, *params, **kwargs)
+
 custom_config = config['custom_config']
 
 model = VisionTransformer(**custom_config).to(device=device)
@@ -118,6 +122,8 @@ if(config["dataset"] == 'cifar'):
     model = nn.Sequential(model,
                         nn.Linear(1000,100, bias=True))
 
+if config["weight_init_trunc_norm"]:
+    init_all(model, torch.nn.init.trunc_normal_)
 
 print(summary(model, (3, 32, 32)))
 
@@ -224,19 +230,22 @@ def train(epochs, optimizer, model, train_data_loader, val_data_loader, save_nam
         #print(f"Valid loss after Epoch{epoch}: {tot_val_loss/batch}")    
         valid_loss_track[epoch] = tot_val_loss/val_batch
         print(f'--------- After Epoch {epoch} : Train Loss {train_loss} ||  Validation Loss {val_loss} || Validation Accuracy {val_epoch_accuracy} || Train Accuracy {train_epoch_accuracy}---------')
-        # wandb.log({"train/Train_Loss":train_loss,
-        #            "val/Valid_Loss": val_loss,
-        #            "val/Valid_Accuracy": val_epoch_accuracy,
-        #            "train/Train_Accuracy": train_epoch_accuracy})
+        wandb.log({"train/Train_Loss":train_loss,
+                   "val/Valid_Loss": val_loss,
+                   "val/Valid_Accuracy": val_epoch_accuracy,
+                   "train/Train_Accuracy": train_epoch_accuracy})
     tot_time = time.time()-start_time
     
     return train_loss_track, valid_loss_track, tot_time, min_val_loss, log_best_train_loss, best_epoch, val_epoch_accuracy
 
-optimizer = torch.optim.Adam(model.parameters(), lr = config['learning_rate'])
+if config['optimizer'] == 'adam':
+    optimizer = torch.optim.Adam(model.parameters(), lr = config['learning_rate'])
+else:
+    optimizer = torch.optim.AdamW(model.parameters(), lr = config['learning_rate'], weight_decay=0.05)
 scheduler_expoLR = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.9, verbose=True)
 
 
-#wandb.init(project=config['wandb_project'], config=config, name = config['wandb_run_name'])
+wandb.init(project=config['wandb_project'], config=config, name = config['wandb_run_name'])
 vit_train_log, vit_val_log, vit_train_time, vit_min_val_loss, vit_log_best_train_loss, vit_best_epoch, vit_val_acc = train(epochs = config['epochs'], 
                                                                                                               optimizer=optimizer,
                                                                                                               model=model,

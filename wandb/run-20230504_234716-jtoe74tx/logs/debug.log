@@ -1,0 +1,26 @@
+2023-05-04 23:47:16,904 INFO    MainThread:15088 [wandb_setup.py:_flush():76] Configure stats pid to 15088
+2023-05-04 23:47:16,904 INFO    MainThread:15088 [wandb_setup.py:_flush():76] Loading settings from /home2/varungupta/.config/wandb/settings
+2023-05-04 23:47:16,904 INFO    MainThread:15088 [wandb_setup.py:_flush():76] Loading settings from /home2/varungupta/DeIT-CIFAR/wandb/settings
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_vit_scratch.py', 'program': '/home2/varungupta/DeIT-CIFAR/train_vit_scratch.py'}
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_init.py:_log_setup():507] Logging user logs to /home2/varungupta/DeIT-CIFAR/wandb/run-20230504_234716-jtoe74tx/logs/debug.log
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_init.py:_log_setup():508] Logging internal logs to /home2/varungupta/DeIT-CIFAR/wandb/run-20230504_234716-jtoe74tx/logs/debug-internal.log
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_init.py:init():547] calling init triggers
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'dataset_path': '/ssd_scratch/cvit/varun/dataset', 'imagenet_path': '/ssd_scratch/cvit/varun', 'valid_ratio': 0.04, 'custom_config': {'img_size': 32, 'in_chans': 3, 'patch_size': 16, 'embed_dim': 384, 'depth': 12, 'n_heads': 6, 'qkv_bias': True, 'mlp_ratio': 4}, 'dataset': 'cifar', 'train_batch_size': 2048, 'valid_batch_size': 2048, 'save_model_path': '/ssd_scratch/cvit/varun/VIT_S_cifar_Scratch/', 'save_model_name': 'VIT_S_imagenet_scratch', 'config_write_path': '/ssd_scratch/cvit/varun/VIT_S_cifar_Scratch/', 'learning_rate': 0.0003, 'epochs': 100, 'wandb_project': 'DeIT', 'wandb_run_name': 'vit_s_cifar_scratch'}
+2023-05-04 23:47:16,905 INFO    MainThread:15088 [wandb_init.py:init():595] starting backend
+2023-05-04 23:47:16,906 INFO    MainThread:15088 [wandb_init.py:init():599] setting up manager
+2023-05-04 23:47:16,908 INFO    MainThread:15088 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-05-04 23:47:16,942 INFO    MainThread:15088 [wandb_init.py:init():605] backend started and connected
+2023-05-04 23:47:16,947 INFO    MainThread:15088 [wandb_init.py:init():695] updated telemetry
+2023-05-04 23:47:17,095 INFO    MainThread:15088 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-05-04 23:47:17,892 INFO    MainThread:15088 [wandb_run.py:_on_init():2176] communicating current version
+2023-05-04 23:47:17,991 INFO    MainThread:15088 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.15.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-05-04 23:47:17,991 INFO    MainThread:15088 [wandb_init.py:init():782] starting run threads in backend
+2023-05-04 23:47:31,406 INFO    MainThread:15088 [wandb_run.py:_console_start():2157] atexit reg
+2023-05-04 23:47:31,406 INFO    MainThread:15088 [wandb_run.py:_redirect():2012] redirect: 3
+2023-05-04 23:47:31,407 INFO    MainThread:15088 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-05-04 23:47:31,407 INFO    MainThread:15088 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-05-04 23:47:31,408 INFO    MainThread:15088 [wandb_init.py:init():824] run started, returning control to user process

@@ -1,0 +1,23 @@
+dataset_path: /ssd_scratch/cvit/varun/dataset
+imagenet_path: /ssd_scratch/cvit/varun
+valid_ratio: 0.04
+custom_config : {
+        img_size: 32,
+        in_chans: 3,
+        patch_size: 16,
+        embed_dim: 384,
+        depth: 12,
+        n_heads: 6,
+        qkv_bias: true,
+        mlp_ratio: 4 
+        }
+dataset: cifar #imagenet32 #cifar
+train_batch_size: 2048
+valid_batch_size: 2048
+save_model_path: /ssd_scratch/cvit/varun/VIT_S_cifar_Scratch/
+save_model_name: VIT_S_imagenet_scratch
+config_write_path : /ssd_scratch/cvit/varun/VIT_S_cifar_Scratch/
+learning_rate: 0.0003
+epochs: 100
+wandb_project : DeIT
+wandb_run_name: vit_s_cifar_scratch

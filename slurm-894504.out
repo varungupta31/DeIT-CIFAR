@@ -1,0 +1,100 @@
+no change     /home2/varungupta/miniconda3/condabin/conda
+no change     /home2/varungupta/miniconda3/bin/conda
+no change     /home2/varungupta/miniconda3/bin/conda-env
+no change     /home2/varungupta/miniconda3/bin/activate
+no change     /home2/varungupta/miniconda3/bin/deactivate
+no change     /home2/varungupta/miniconda3/etc/profile.d/conda.sh
+no change     /home2/varungupta/miniconda3/etc/fish/conf.d/conda.fish
+no change     /home2/varungupta/miniconda3/shell/condabin/Conda.psm1
+no change     /home2/varungupta/miniconda3/shell/condabin/conda-hook.ps1
+no change     /home2/varungupta/miniconda3/lib/python3.9/site-packages/xontrib/conda.xsh
+no change     /home2/varungupta/miniconda3/etc/profile.d/conda.csh
+no change     /home2/varungupta/.bashrc
+no change     /home2/varungupta/.zshrc
+no change     /home2/varungupta/.config/fish/config.fish
+no change     /home2/varungupta/.xonshrc
+no change     /home2/varungupta/.tcshrc
+No action taken.
+/var/spool/slurmd/job894504/slurm_script: line 12: activate: No such file or directory
+wandb: Currently logged in as: varun-gupta (video-understanding). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.15.1 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.14.2
+wandb: Run data is saved locally in /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_151736-o4adbe61
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run vit_b_cifar_scratch_regularized
+wandb: ⭐️ View project at https://wandb.ai/video-understanding/DeIT
+wandb: 🚀 View run at https://wandb.ai/video-understanding/DeIT/runs/o4adbe61
+Files already downloaded and verified
+There are 48000 Train samples, and 2000 in the Dataset.
+<class 'torch.utils.data.dataset.Subset'>
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+├─VisionTransformer: 1-1                 [-1, 1000]                --
+|    └─PatchEmbed: 2-1                   [-1, 4, 768]              --
+|    |    └─Conv2d: 3-1                  [-1, 768, 2, 2]           590,592
+|    └─Dropout: 2-2                      [-1, 5, 768]              --
+|    └─ModuleList: 2                     []                        --
+|    |    └─Block: 3-2                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-3                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-4                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-5                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-6                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-7                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-8                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-9                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-10                  [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-11                  [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-12                  [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-13                  [-1, 5, 768]              7,087,872
+|    └─LayerNorm: 2-3                    [-1, 5, 768]              1,536
+|    └─Linear: 2-4                       [-1, 1000]                769,000
+├─Linear: 1-2                            [-1, 100]                 100,100
+==========================================================================================
+Total params: 86,515,692
+Trainable params: 86,515,692
+Non-trainable params: 0
+Total mult-adds (M): 260.04
+==========================================================================================
+Input size (MB): 0.01
+Forward/backward pass size (MB): 0.76
+Params size (MB): 330.03
+Estimated Total Size (MB): 330.81
+==========================================================================================
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+├─VisionTransformer: 1-1                 [-1, 1000]                --
+|    └─PatchEmbed: 2-1                   [-1, 4, 768]              --
+|    |    └─Conv2d: 3-1                  [-1, 768, 2, 2]           590,592
+|    └─Dropout: 2-2                      [-1, 5, 768]              --
+|    └─ModuleList: 2                     []                        --
+|    |    └─Block: 3-2                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-3                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-4                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-5                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-6                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-7                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-8                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-9                   [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-10                  [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-11                  [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-12                  [-1, 5, 768]              7,087,872
+|    |    └─Block: 3-13                  [-1, 5, 768]              7,087,872
+|    └─LayerNorm: 2-3                    [-1, 5, 768]              1,536
+|    └─Linear: 2-4                       [-1, 1000]                769,000
+├─Linear: 1-2                            [-1, 100]                 100,100
+==========================================================================================
+Total params: 86,515,692
+Trainable params: 86,515,692
+Non-trainable params: 0
+Total mult-adds (M): 260.04
+==========================================================================================
+Input size (MB): 0.01
+Forward/backward pass size (MB): 0.76
+Params size (MB): 330.03
+Estimated Total Size (MB): 330.81
+==========================================================================================
+Adjusting learning rate of group 0 to 2.0000e-03.
+██Epoch 1/100 : |----------------------------------------| 0.00% [0/24 00:00<?]Epoch 1/100 : |█---------------------------------------| 4.17% [1/24 00:03<01:20]Epoch 1/100 : |███-------------------------------------| 8.33% [2/24 00:06<01:11]Epoch 1/100 : |█████-----------------------------------| 12.50% [3/24 00:09<01:08]Epoch 1/100 : |██████----------------------------------| 16.67% [4/24 00:12<01:04]Epoch 1/100 : |████████--------------------------------| 20.83% [5/24 00:15<01:00]Epoch 1/100 : |██████████------------------------------| 25.00% [6/24 00:18<00:56]Epoch 1/100 : |███████████-----------------------------| 29.17% [7/24 00:21<00:53]Epoch 1/100 : |█████████████---------------------------| 33.33% [8/24 00:24<00:49]Epoch 1/100 : |███████████████-------------------------| 37.50% [9/24 00:27<00:46]Epoch 1/100 : |████████████████------------------------| 41.67% [10/24 00:31<00:43]Epoch 1/100 : |██████████████████----------------------| 45.83% [11/24 00:34<00:40]Epoch 1/100 : |████████████████████--------------------| 50.00% [12/24 00:37<00:37]Epoch 1/100 : |█████████████████████-------------------| 54.17% [13/24 00:40<00:34]slurmstepd: error: *** JOB 894504 ON gnode031 CANCELLED AT 2023-05-05T15:18:30 ***

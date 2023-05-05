@@ -1,0 +1,74 @@
+2023-05-05 18:20:20,363 INFO    StreamThr :18618 [internal.py:wandb_internal():86] W&B internal server running at pid: 18618, started at: 2023-05-05 18:20:20.362494
+2023-05-05 18:20:20,364 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status
+2023-05-05 18:20:20,390 INFO    WriterThread:18618 [datastore.py:open_for_write():85] open: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/run-vpuym7kp.wandb
+2023-05-05 18:20:20,392 DEBUG   SenderThread:18618 [sender.py:send():375] send: header
+2023-05-05 18:20:20,400 DEBUG   SenderThread:18618 [sender.py:send():375] send: run
+2023-05-05 18:20:21,168 INFO    SenderThread:18618 [dir_watcher.py:__init__():219] watching files in: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files
+2023-05-05 18:20:21,168 INFO    SenderThread:18618 [sender.py:_start_run_threads():1124] run started: vpuym7kp with start time 1683291020.387886
+2023-05-05 18:20:21,168 DEBUG   SenderThread:18618 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:20:21,170 INFO    SenderThread:18618 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:20:21,171 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: check_version
+2023-05-05 18:20:21,171 DEBUG   SenderThread:18618 [sender.py:send_request():402] send_request: check_version
+2023-05-05 18:20:21,306 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: run_start
+2023-05-05 18:20:21,322 DEBUG   HandlerThread:18618 [system_info.py:__init__():31] System info init
+2023-05-05 18:20:21,322 DEBUG   HandlerThread:18618 [system_info.py:__init__():46] System info init done
+2023-05-05 18:20:21,322 INFO    HandlerThread:18618 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 18:20:21,322 INFO    SystemMonitor:18618 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 18:20:21,322 INFO    HandlerThread:18618 [system_monitor.py:probe():201] Collecting system info
+2023-05-05 18:20:21,323 INFO    SystemMonitor:18618 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 18:20:21,323 INFO    SystemMonitor:18618 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 18:20:21,324 INFO    SystemMonitor:18618 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 18:20:21,325 INFO    SystemMonitor:18618 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 18:20:21,327 INFO    SystemMonitor:18618 [interfaces.py:start():190] Started network monitoring
+2023-05-05 18:20:21,367 DEBUG   HandlerThread:18618 [system_info.py:probe():195] Probing system
+2023-05-05 18:20:21,368 DEBUG   HandlerThread:18618 [system_info.py:_probe_git():180] Probing git
+2023-05-05 18:20:21,378 DEBUG   HandlerThread:18618 [system_info.py:_probe_git():188] Probing git done
+2023-05-05 18:20:21,378 DEBUG   HandlerThread:18618 [system_info.py:probe():240] Probing system done
+2023-05-05 18:20:21,378 DEBUG   HandlerThread:18618 [system_monitor.py:probe():210] {'os': 'Linux-4.15.0-210-generic-x86_64-with-glibc2.27', 'python': '3.11.2', 'heartbeatAt': '2023-05-05T12:50:21.367340', 'startedAt': '2023-05-05T12:50:20.342742', 'docker': None, 'cuda': None, 'args': ('--config', 'configs/default_distil_no_token.yaml'), 'state': 'running', 'program': '/home2/varungupta/DeIT-CIFAR/train_visiontransformer_nodisttoken.py', 'codePath': 'train_visiontransformer_nodisttoken.py', 'git': {'remote': 'https://github.com/varungupta31/DeIT-CIFAR.git', 'commit': '4c8e2bd155f84861290fa517ee83744a7d1d8acd'}, 'email': 'varunharsh@gmail.com', 'root': '/home2/varungupta/DeIT-CIFAR', 'host': 'gnode059', 'username': 'varungupta', 'executable': '/home2/varungupta/miniconda3/envs/smai/bin/python', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 1.3095750000000004, 'min': 1200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 2.025, 'min': 1200.0, 'max': 3400.0}, {'current': 1.881, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.201, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.438, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.202, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.201, 'min': 1200.0, 'max': 3400.0}, {'current': 2.115, 'min': 1200.0, 'max': 3400.0}, {'current': 1.988, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.201, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.201, 'min': 1200.0, 'max': 3400.0}, {'current': 1.201, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.25, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.201, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.2, 'min': 1200.0, 'max': 3400.0}, {'current': 1.201, 'min': 1200.0, 'max': 3400.0}], 'disk': {'total': 219.00129318237305, 'used': 71.65154266357422}, 'gpu': 'NVIDIA GeForce RTX 2080 Ti', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2080 Ti', 'memory_total': 11811160064}], 'memory': {'total': 125.78238677978516}}
+2023-05-05 18:20:21,379 INFO    HandlerThread:18618 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-05 18:20:21,379 INFO    HandlerThread:18618 [system_monitor.py:probe():214] Publishing system info
+2023-05-05 18:20:21,379 DEBUG   HandlerThread:18618 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-05 18:20:21,380 DEBUG   HandlerThread:18618 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-05 18:20:21,381 DEBUG   HandlerThread:18618 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-05-05 18:20:22,170 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_created():278] file/dir created: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/wandb-summary.json
+2023-05-05 18:20:22,171 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_created():278] file/dir created: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/conda-environment.yaml
+2023-05-05 18:20:22,171 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_created():278] file/dir created: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/requirements.txt
+2023-05-05 18:20:28,176 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/conda-environment.yaml
+2023-05-05 18:20:28,214 DEBUG   HandlerThread:18618 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-05 18:20:28,217 INFO    HandlerThread:18618 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-05 18:20:28,524 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:20:28,524 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-05 18:20:28,524 DEBUG   SenderThread:18618 [sender.py:send():375] send: files
+2023-05-05 18:20:28,525 INFO    SenderThread:18618 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-05 18:20:28,532 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:20:28,533 DEBUG   SenderThread:18618 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:20:28,888 DEBUG   SenderThread:18618 [sender.py:send():375] send: telemetry
+2023-05-05 18:20:29,178 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_created():278] file/dir created: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/output.log
+2023-05-05 18:20:29,178 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_created():278] file/dir created: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/wandb-metadata.json
+2023-05-05 18:20:29,703 INFO    wandb-upload_0:18618 [upload_job.py:push():137] Uploaded file /tmp/tmpnjh1y84zwandb/9yu45zxk-wandb-metadata.json
+2023-05-05 18:20:31,180 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/output.log
+2023-05-05 18:20:31,890 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:20:35,183 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/output.log
+2023-05-05 18:20:37,741 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:20:42,742 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:20:43,534 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:20:43,534 DEBUG   SenderThread:18618 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:20:47,827 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:20:52,833 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:20:53,197 INFO    Thread-12 :18618 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_182020-vpuym7kp/files/config.yaml
+2023-05-05 18:20:58,174 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:20:58,533 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:20:58,534 DEBUG   SenderThread:18618 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:21:03,832 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:08,833 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:13,534 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:21:13,534 DEBUG   SenderThread:18618 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:21:14,828 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:19,829 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:21,327 DEBUG   SystemMonitor:18618 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 18:21:21,329 DEBUG   SenderThread:18618 [sender.py:send():375] send: stats
+2023-05-05 18:21:25,330 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:28,534 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:21:28,535 DEBUG   SenderThread:18618 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:21:30,843 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:35,844 DEBUG   HandlerThread:18618 [handler.py:handle_request():144] handle_request: status_report
