@@ -1,3 +1,23 @@
 
 Adjusting learning rate of group 0 to 3.0000e-04.
 /home2/varungupta/miniconda3/envs/smai/lib/python3.11/site-packages/torch/nn/functional.py:2919: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Epoch 1 	 CE@train: 9.327972412109375 	 distill@train: 4.66217565536499	 CE@val: 4.611174841721852 	 val_acc@1: 1.920863560267857 	 LR:0.0003 	 Time(s):73.43008875846863
+Adjusting learning rate of group 0 to 2.7000e-04.
+/home2/varungupta/miniconda3/envs/smai/lib/python3.11/site-packages/torch/nn/functional.py:2919: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Epoch 2 	 CE@train: 9.099738121032715 	 distill@train: 4.543788909912109	 CE@val: 4.539094785849254 	 val_acc@1: 3.064836774553571 	 LR:0.00027 	 Time(s):72.8796820640564
+Adjusting learning rate of group 0 to 2.4300e-04.
+/home2/varungupta/miniconda3/envs/smai/lib/python3.11/site-packages/torch/nn/functional.py:2919: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Epoch 3 	 CE@train: 8.91293716430664 	 distill@train: 4.451199054718018	 CE@val: 4.469987094402313 	 val_acc@1: 3.0067080543154763 	 LR:0.000243 	 Time(s):72.6835704644521
+Adjusting learning rate of group 0 to 2.1870e-04.
+/home2/varungupta/miniconda3/envs/smai/lib/python3.11/site-packages/torch/nn/functional.py:2919: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Epoch 4 	 CE@train: 8.756906509399414 	 distill@train: 4.375021934509277	 CE@val: 4.422583560148875 	 val_acc@1: 3.605433872767857 	 LR:0.0002187 	 Time(s):72.54969292879105
+Adjusting learning rate of group 0 to 1.9683e-04.
+/home2/varungupta/miniconda3/envs/smai/lib/python3.11/site-packages/torch/nn/functional.py:2919: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.
+  warnings.warn(
+Epoch 5 	 CE@train: 8.661520957946777 	 distill@train: 4.322515964508057	 CE@val: 4.39995672305425 	 val_acc@1: 3.815569196428571 	 LR:0.00019683 	 Time(s):72.51827445030213
+Adjusting learning rate of group 0 to 1.7715e-04.
+/home2/varungupta/miniconda3/envs/smai/lib/python3.11/site-packages/torch/nn/functional.py:2919: UserWarning: reduction: 'mean' divides the total loss by both the batch size and the support size.'batchmean' divides only by the batch size, and aligns with the KL div math definition.'mean' will be changed to behave the same as 'batchmean' in the next major release.

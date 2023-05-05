@@ -2430,3 +2430,273 @@
 2023-05-05 18:21:29,869 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
 2023-05-05 18:21:31,024 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
 2023-05-05 18:21:33,027 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:34,728 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:21:35,028 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:35,729 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:37,031 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:39,033 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:40,036 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:21:40,037 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:21:40,902 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:41,035 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:43,037 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:45,039 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:46,645 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:47,041 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:49,043 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:51,045 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:52,134 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:52,591 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 18:21:52,597 DEBUG   SenderThread:8961 [sender.py:send():375] send: history
+2023-05-05 18:21:52,597 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:21:52,702 INFO    SenderThread:8961 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:21:53,047 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:53,047 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/wandb-summary.json
+2023-05-05 18:21:55,037 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:21:55,038 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:21:55,049 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:57,051 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:21:57,423 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:21:59,053 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:01,056 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:03,059 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:03,211 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:04,728 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:22:05,062 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:07,064 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:08,663 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:09,066 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:10,037 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:22:10,038 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:22:11,068 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:13,071 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:14,296 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:15,073 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:17,075 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:19,077 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:19,534 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:21,079 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:23,082 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:25,037 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:22:25,037 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:22:25,084 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:25,324 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:27,086 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:29,088 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:30,683 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:31,090 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:31,188 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 18:22:31,190 DEBUG   SenderThread:8961 [sender.py:send():375] send: history
+2023-05-05 18:22:31,190 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:22:31,194 INFO    SenderThread:8961 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:22:32,091 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/wandb-summary.json
+2023-05-05 18:22:33,092 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:34,728 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:22:35,095 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:35,729 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:37,098 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:39,101 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:40,037 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:22:40,037 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:22:41,103 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:41,673 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:43,105 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:45,107 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:47,098 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:47,109 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:49,111 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:51,113 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:52,780 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:53,115 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:55,038 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:22:55,039 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:22:55,117 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:57,119 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:22:57,972 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:22:59,121 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:01,123 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:03,125 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:03,741 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:04,730 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:23:05,126 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:07,128 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:09,130 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:09,141 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:09,573 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 18:23:09,575 DEBUG   SenderThread:8961 [sender.py:send():375] send: history
+2023-05-05 18:23:09,575 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:23:09,577 INFO    SenderThread:8961 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:23:10,037 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:23:10,038 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:23:10,131 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/wandb-summary.json
+2023-05-05 18:23:11,132 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:13,134 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:14,355 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:15,136 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:17,138 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:19,140 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:20,178 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:21,142 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:23,144 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:25,038 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:23:25,039 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:23:25,146 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:25,330 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:27,148 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:29,150 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:31,152 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:31,165 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:33,154 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:34,731 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:23:35,156 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:36,428 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:37,158 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:39,160 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:40,038 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:23:40,038 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:23:41,162 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:42,299 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:43,164 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:45,166 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:47,168 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:47,776 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:48,206 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 18:23:48,210 DEBUG   SenderThread:8961 [sender.py:send():375] send: history
+2023-05-05 18:23:48,210 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:23:48,211 INFO    SenderThread:8961 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:23:49,170 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:49,170 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/wandb-summary.json
+2023-05-05 18:23:51,172 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:53,004 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:53,174 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:55,038 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:23:55,038 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:23:55,176 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:57,178 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:23:58,677 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:23:59,180 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:01,182 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:03,184 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:03,994 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:04,732 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:24:05,186 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:07,189 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:09,191 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:09,984 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:10,038 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:24:10,038 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:24:11,194 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:13,196 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:15,198 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:15,344 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:17,200 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:19,202 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:21,080 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:21,204 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:23,206 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:25,038 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:24:25,038 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:24:25,208 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:26,513 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:26,952 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 18:24:26,959 DEBUG   SenderThread:8961 [sender.py:send():375] send: history
+2023-05-05 18:24:26,960 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:24:26,962 INFO    SenderThread:8961 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:24:27,210 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:27,210 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/wandb-summary.json
+2023-05-05 18:24:29,213 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:31,216 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:31,732 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:33,218 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:34,733 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:24:35,220 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:37,222 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:37,538 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:39,224 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:40,039 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:24:40,039 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:24:41,226 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:42,861 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:43,228 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:45,230 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:47,232 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:48,655 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:49,234 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:51,236 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:53,238 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:54,066 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:24:55,039 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:24:55,039 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:24:55,241 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:59,246 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:24:59,852 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:01,250 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:03,252 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:04,734 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:25:05,255 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:05,735 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:05,773 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 18:25:05,778 DEBUG   SenderThread:8961 [sender.py:send():375] send: history
+2023-05-05 18:25:05,778 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:25:05,779 INFO    SenderThread:8961 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:25:06,256 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/wandb-summary.json
+2023-05-05 18:25:07,258 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:09,260 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:10,039 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:25:10,039 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:25:11,261 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:11,600 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:13,263 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:15,266 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:16,630 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:17,268 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:19,270 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:21,272 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:21,977 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:23,274 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:25,039 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:25:25,039 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:25:25,276 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:27,278 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:27,676 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:29,280 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:31,283 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:33,154 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:33,285 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:34,735 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:25:35,287 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:37,289 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:38,977 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:39,291 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:40,039 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:25:40,039 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:25:41,293 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:43,295 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:44,422 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:44,896 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 18:25:44,902 DEBUG   SenderThread:8961 [sender.py:send():375] send: history
+2023-05-05 18:25:44,902 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 18:25:44,904 INFO    SenderThread:8961 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 18:25:45,297 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:45,297 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/wandb-summary.json
+2023-05-05 18:25:47,299 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:49,300 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:49,760 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:51,303 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:53,306 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:55,039 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:25:55,040 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 18:25:55,308 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:55,322 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:25:57,310 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:25:59,312 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:26:00,325 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:26:01,315 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:26:03,316 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:26:04,737 DEBUG   SenderThread:8961 [sender.py:send():375] send: stats
+2023-05-05 18:26:05,318 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:26:05,623 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 18:26:07,320 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:26:09,323 INFO    Thread-12 :8961 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home2/varungupta/DeIT-CIFAR/wandb/run-20230505_174033-7um1paxx/files/output.log
+2023-05-05 18:26:10,039 DEBUG   HandlerThread:8961 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 18:26:10,040 DEBUG   SenderThread:8961 [sender.py:send_request():402] send_request: stop_status
