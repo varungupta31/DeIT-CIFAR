@@ -1,16 +1,16 @@
 transformations: True
 paths:
     dataset_download_path: /ssd_scratch/cvit/varun/
-    model_save_path : /ssd_scratch/cvit/varun/trained_models
+    model_save_path : /ssd_scratch/cvit/varun/vit_ti_hard_dist_no_token
 
 dataset : cifar #cifar / imagenet32
 val_split : 0.04
-train_batch : 1024
+batch_size : 2048
 
 transormer_config:
-    use_default_vit_B: True
+    use_default_vit_B: False
     use_default_vit_S: False
-    use_default_vit_Ti: False
+    use_default_vit_Ti: True
     custom_config:
         {
         img_size: 32,
@@ -24,15 +24,14 @@ transormer_config:
 
 
 optimizer : adam #sgd / sgd_m / sgd_l2 / rms
-model_name : vit_b_reg16gf_hard_dist
+model_name : vit_ti_hard_dist_no_token
 distillation_type : hard #soft
-student_model : vitb #vitb / vits / vitti / vitbD / vitsD / vittiD
 teacher_model_path: /ssd_scratch/cvit/varun/regnet_y_16gf_32_3
 training_epochs: 100
-initial_lr : 3e-4
+initial_lr : 0.0003
 
 wandb :
-    enable: False
+    enable: True
     project_name : DeIT
-    run_name : vitb_HardDistillation_regnet16gf_pretrained"
+    run_name : vit_ti_HardDistillationNoToken_regnet16gf_pretrained
 

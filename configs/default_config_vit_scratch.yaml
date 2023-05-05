@@ -1,19 +1,20 @@
 dataset_path: /ssd_scratch/cvit/varun/dataset
-cifar_path: /ssd_scratch/cvit/varun/imagenet
+imagenet_path: /ssd_scratch/cvit/varun
 valid_ratio: 0.04
 custom_config : {
         img_size: 32,
         in_chans: 3,
         patch_size: 16,
-        embed_dim: 768,
+        embed_dim: 192,
         depth: 12,
-        n_heads: 12,
+        n_heads: 3,
         qkv_bias: true,
         mlp_ratio: 4 
         }
-dataset: cifar #imagenet32
+dataset: cifar #imagenet32 #cifar
 train_batch_size: 2048
 valid_batch_size: 2048
+<<<<<<< HEAD
 save_model_path: /ssd_scratch/cvit/varun/VIT_models_temp/
 save_model_name: VIT_base_no_resize
 config_write_path : /ssd_scratch/cvit/varun/VIT_models_temp/
@@ -21,3 +22,14 @@ learning_rate: 0.0003
 epochs: 1000
 wandb_project : DeIT
 wandb_run_name: vit_base_model_scratch_no_resize
+=======
+save_model_path: /ssd_scratch/cvit/varun/VIT_Ti_CIFAR_SCRATCH/
+save_model_name: VIT_Ti_CIFAR_SCRATCH
+config_write_path : /ssd_scratch/cvit/varun/VIT_Ti_CIFAR_SCRATCH/
+learning_rate: 0.0003
+epochs: 100
+weight_init_trunc_norm: False
+optimizer: adam #adam
+wandb_project : DeIT
+wandb_run_name: VIT_Ti_CIFAR_SCRATCH
+>>>>>>> upstream/main

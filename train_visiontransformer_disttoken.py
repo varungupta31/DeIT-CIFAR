@@ -25,39 +25,37 @@ parser.add_argument("--config", help = "path of the training configuartion file"
 args = parser.parse_args()
 
 #Reading the configuration file
+
 with open(args.config, 'r') as f:
     try:
         config = yaml.safe_load(f)
     except yaml.YAMLError as exc:
         print(exc)
 
-if config['transformations'] == 'true':
+if config['transformations']:
     if config['dataset'] == 'cifar':
-	    transforms = transforms.Compose([transforms.ToTensor(),
-						transforms.RandomHorizontalFlip(p=0.1),
-						transforms.RandomVerticalFlip(p=0.1),
-						transforms.RandomRotation(degrees=(0,10)),
-						transforms.Normalize((0.2675, 0.2565, 0.2761),(0.5071, 0.4867, 0.4408))])
-	else:
-	    transforms = transforms.Compose([transforms.ToTensor(),
-						transforms.RandomHorizontalFlip(p=0.1),
-						transforms.RandomVerticalFlip(p=0.1),
-						transforms.RandomRotation(degrees=(0,10)),
-						transforms.Normalize((0.485, 0.456, 0.406),(0.229, 0.224, 0.225))])
-		
-	if(config['dataset'] == 'cifar'):
-	    trainset =datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
-	elif(config['dataset'] == 'imagenet32'):
-	    trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
-	    
-	    
-    
+        transforms = transforms.Compose([transforms.ToTensor(),
+				      					 transforms.RandomHorizontalFlip(p=0.1),
+									     transforms.RandomVerticalFlip(p=0.1),
+									     transforms.RandomRotation(degrees=(0,10)),
+									     transforms.Normalize((0.2675, 0.2565, 0.2761),(0.5071, 0.4867, 0.4408))])
+    else:
+        transforms = transforms.Compose([transforms.ToTensor(),
+				     					 transforms.RandomHorizontalFlip(p=0.1),
+									     transforms.RandomVerticalFlip(p=0.1),
+									     transforms.RandomRotation(degrees=(0,10)),
+									     transforms.Normalize((0.485, 0.456, 0.406),(0.229, 0.224, 0.225))])
+    if config['dataset'] == 'cifar':
+        trainset = datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
+    else:
+        trainset = ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
 else:
-    if(config['dataset'] == 'cifar'):
-	    trainset =datasets.CIFAR100(root = config['dataset_download_path'], train = True, transform =None ,download = True)
-	elif(config['dataset'] == 'imagenet32'):
-	    trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =None)
-trainset, valset = torch.utils.data.random_split(trainset, [config['val_split']*len(trainset), len(trainset)-config['val_split']*len(trainset)])
+    if config['dataset'] == 'cifar':
+        trainset =datasets.CIFAR100(root = config['dataset_download_path'], train = True, transform =None ,download = True)
+    else:
+        trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =None)
+
+trainset, valset = torch.utils.data.random_split(trainset, [round(config['val_split']*len(trainset)), len(trainset)-round(config['val_split']*len(trainset))])
 
 train_loader = DataLoader(trainset, batch_size = config['batch_size'], shuffle = True)
 val_loader = DataLoader(valset, batch_size = config['batch_size'], shuffle = True)
@@ -231,27 +229,29 @@ def train(teacher_model, student_model,num_epochs,train_loader,val_loader,optimi
 		
 
 		if distillation_type == "soft":
-			wandb.log({"epoch": epoch+1,
-					"train/CE_train:": cross_entropy_loss_train_log,
-					"train/KL_Train": kl_loss_train_log,
-					"train/Dist_Train": dist_loss_log,
-					"val/CE_val": cross_entropy_loss_val_log,
-					"val/KL_Val": kl_loss_val_log,
-					"val/Val_Acc": val_acc_cls,
-					"lr": lr_log,
-					"train/Train_Acc": train_acc_cls})
+			if(config["wandb"]["enable"]):
+				wandb.log({"epoch": epoch+1,
+						"train/CE_train:": cross_entropy_loss_train_log,
+						"train/KL_Train": kl_loss_train_log,
+						"train/Dist_Train": dist_loss_log,
+						"val/CE_val": cross_entropy_loss_val_log,
+						"val/KL_Val": kl_loss_val_log,
+						"val/Val_Acc": val_acc_cls,
+						"lr": lr_log,
+						"train/Train_Acc": train_acc_cls})
 		elif distillation_type == 'hard':
-			wandb.log({"epoch": epoch+1,
-					"train/CE_train:": cross_entropy_loss_train_log,
-					"train/Dist_Train": dist_loss_log,
-					"val/CE_val": cross_entropy_loss_val_log,
-					"val/Val_Acc_cls_token": val_acc_cls,
-					"lr": lr_log,
-					"train/Train_Acc_cls_token": train_acc_cls,
-					"train/Train_Acc_dist_token": train_acc_dist,
-					"val/Val_Acc_dist_token": val_acc_dist,
-					"train/Train_Acc_cls_dist_token": train_acc_cls_dist,
-					"val/Val_Acc_cls_dist_token": val_acc_cls_dist })
+			if(config["wandb"]["enable"]):
+				wandb.log({"epoch": epoch+1,
+						"train/CE_train:": cross_entropy_loss_train_log,
+						"train/Dist_Train": dist_loss_log,
+						"val/CE_val": cross_entropy_loss_val_log,
+						"val/Val_Acc_cls_token": val_acc_cls,
+						"lr": lr_log,
+						"train/Train_Acc_cls_token": train_acc_cls,
+						"train/Train_Acc_dist_token": train_acc_dist,
+						"val/Val_Acc_dist_token": val_acc_dist,
+						"train/Train_Acc_cls_dist_token": train_acc_cls_dist,
+						"val/Val_Acc_cls_dist_token": val_acc_cls_dist })
 		
 		if distillation_type == "soft":
 
@@ -265,7 +265,7 @@ def train(teacher_model, student_model,num_epochs,train_loader,val_loader,optimi
 		torch.save(student_model.state_dict(),model_path+"/"+model_name +"_" +str(epoch+1)+'.h5')
 
 
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
 if config["transormer_config"]["use_default_vit_B"]:
 	
@@ -318,10 +318,15 @@ else:
             "mlp_ratio": 4,
     }
 
-parent_model = models.regnet_y_16gf()
+if config['dataset'] == 'cifar':
+	parent_model = models.regnet_y_16gf()
+else:
+	parent_model = models.regnet_y_16gf('DEFAULT')
 num_ftrs = parent_model.fc.in_features
-parent_model.fc = nn.Linear(num_ftrs, 100)
-parent_model.load_state_dict(torch.load(config['path']['teacher_model_path']))
+if config['dataset'] == 'cifar':
+	parent_model.fc = nn.Linear(num_ftrs, 100)
+	parent_model.load_state_dict(torch.load(config['paths']['teacher_model_path']))
+
 print("++++++++ PARENT MODEL +++++++++")
 print(parent_model)
 parent_model.to(device=device)
@@ -343,4 +348,4 @@ if(config["wandb"]["enable"]):
             name = config['wandb']['run_name'],
             config = config)
     
-train(parent_model, student_model, num_epochs, train_loader, val_loader, optimizer, criterion, distillation_type='hard')
+train(parent_model, student_model, num_epochs, train_loader, val_loader, optimizer, criterion, distillation_type=config['distillation_type'])

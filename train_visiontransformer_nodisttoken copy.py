@@ -31,30 +31,33 @@ with open(args.config, 'r') as f:
 #Data Loader
 print(config['dataset'])
 
-if config['transformations']:
+
+if config['transformations'] == 'true':
     if config['dataset'] == 'cifar':
-        transforms = transforms.Compose([transforms.ToTensor(),
+	    transforms = transforms.Compose([transforms.ToTensor(),
 						transforms.RandomHorizontalFlip(p=0.1),
 						transforms.RandomVerticalFlip(p=0.1),
 						transforms.RandomRotation(degrees=(0,10)),
 						transforms.Normalize((0.2675, 0.2565, 0.2761),(0.5071, 0.4867, 0.4408))])
     else:
-        transforms = transforms.Compose([transforms.ToTensor(),
+	    transforms = transforms.Compose([transforms.ToTensor(),
 						transforms.RandomHorizontalFlip(p=0.1),
 						transforms.RandomVerticalFlip(p=0.1),
 						transforms.RandomRotation(degrees=(0,10)),
 						transforms.Normalize((0.485, 0.456, 0.406),(0.229, 0.224, 0.225))])
     if(config['dataset'] == 'cifar'):
-        trainset = datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
-    else:
-        trainset = ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
-
+	    trainset = datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =transforms ,download = True)
+    elif(config['dataset'] == 'imagenet32'):
+	    trainset = ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =transforms)
+	    
+	    
+    
 else:
     if(config['dataset'] == 'cifar'):
-        trainset =datasets.CIFAR100(root = config['paths']['dataset_download_path'], train = True, transform =None ,download = True)
-    else:
-        trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =None)
-trainset, valset = torch.utils.data.random_split(trainset, [round(config['val_split']*len(trainset)), len(trainset)-round(config['val_split']*len(trainset))])
+	    trainset =datasets.CIFAR100(root = config['dataset_download_path'], train = True, transform =None ,download = True)
+    elif(config['dataset'] == 'imagenet32'):
+	    trainset =ImageNet32(root = config['paths']['dataset_download_path'], train = True, transform =None)
+trainset, valset = torch.utils.data.random_split(trainset, [config['val_split']*len(trainset), len(trainset)-config['val_split']*len(trainset)])
 
 train_loader = DataLoader(trainset, batch_size = config['batch_size'], shuffle = True)
 val_loader = DataLoader(valset, batch_size = config['batch_size'], shuffle = True)
@@ -293,25 +296,23 @@ else:
     }
 
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 parent_model = models.regnet_y_16gf()
 num_ftrs = parent_model.fc.in_features
-if config['dataset'] == 'cifar':
-	parent_model.fc = nn.Linear(num_ftrs, 100)
+parent_model.fc = nn.Linear(num_ftrs, 100)
 parent_model.load_state_dict(torch.load(config["teacher_model_path"]))
 print("++++++++ PARENT MODEL +++++++++")
 print(parent_model)
 parent_model.to(device=device)
 
 #vitb / vits / vitti / vitbD / vitsD / vittiD
-
-student_model = VisionTransformer(**custom_config)
-if config['dataset'] == 'cifar':
-	student_model = nn.Sequential(student_model, nn.Linear(1000,100, bias=True))
-print("++++++++ STUDENT TRANSFORMER MODEL +++++++++")
-print(student_model)
-student_model.to(device=device)
+if(config['student_model'] == "vitb"):
+    student_model = VisionTransformer(**custom_config)
+    student_model = nn.Sequential(student_model, nn.Linear(1000,100, bias=True))
+    print("++++++++ STUDENT TRANSFORMER MODEL +++++++++")
+    print(student_model)
+    student_model.to(device=device)
 
 
 criterion = nn.CrossEntropyLoss()
@@ -323,5 +324,3 @@ if(config["wandb"]["enable"]):
             name = config['wandb']['run_name'],
             config = config)
 train(parent_model, student_model, num_epochs, train_loader, val_loader, optimizer, criterion, distillation_type=config["distillation_type"])
-
-    
