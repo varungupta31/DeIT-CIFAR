@@ -1,0 +1,18 @@
+paths:
+    dataset_download_path: /ssd_scratch/cvit/varun
+    model_path : /ssd_scratch/cvit/varun/VIT_B_cifar_scratch_26.pth
+
+dataset : cifar #cifar / imagenet32
+batch_size : 1024
+num_workers : 4
+
+transformer_config:
+    use_default_vit_B: True
+    use_default_vit_S: False
+    use_default_vit_Ti: False
+
+
+model_type : Transformer #cnn
+
+mode : Normal #distilled_token 
+

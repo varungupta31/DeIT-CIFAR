@@ -24,3 +24,4 @@ config: {'dataset_path': '/ssd_scratch/cvit/varun/dataset', 'imagenet_path': '/s
 2023-05-05 17:40:39,943 INFO    MainThread:8725 [wandb_run.py:_redirect():2077] Wrapping output streams.
 2023-05-05 17:40:39,943 INFO    MainThread:8725 [wandb_run.py:_redirect():2102] Redirects installed.
 2023-05-05 17:40:39,944 INFO    MainThread:8725 [wandb_init.py:init():824] run started, returning control to user process
+2023-05-05 18:46:04,432 WARNING MsgRouterThr:8725 [router.py:message_loop():77] message_loop has been closed

@@ -24,3 +24,4 @@ config: {'transformations': True, 'paths': {'dataset_download_path': '/ssd_scrat
 2023-05-05 18:20:28,533 INFO    MainThread:18587 [wandb_run.py:_redirect():2077] Wrapping output streams.
 2023-05-05 18:20:28,533 INFO    MainThread:18587 [wandb_run.py:_redirect():2102] Redirects installed.
 2023-05-05 18:20:28,534 INFO    MainThread:18587 [wandb_init.py:init():824] run started, returning control to user process
+2023-05-05 20:21:18,487 WARNING MsgRouterThr:18587 [router.py:message_loop():77] message_loop has been closed
