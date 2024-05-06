@@ -1,1 +1,0 @@
-{"epoch": 100, "train/CE_train:": 7.736079216003418, "train/Dist_Train": 3.869913101196289, "val/CE_val": 4.1661832729975385, "val/Val_Acc": 6.7397344680059526, "lr": 8.853799629195851e-09, "train/Train_Acc": 12.65, "_timestamp": 1683298267.0701416, "_runtime": 7246.6822555065155, "_step": 99, "_wandb": {"runtime": 7245}}
